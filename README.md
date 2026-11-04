@@ -1,4 +1,4 @@
-# Ronyal Super Store — Demo POS
+# Store Manager Demo
 
 This repository contains an independent, offline-first demo application. It does not include or import the production RSS application, production database, Firebase configuration, or customer data.
 
