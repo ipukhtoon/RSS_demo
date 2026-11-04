@@ -1,6 +1,6 @@
 {
-  "appId": "com.ronyalsuperstore.demo",
-  "appName": "Ronyal Store Demo",
+  "appId": "com.storemanager.demo",
+  "appName": "Store Manager Demo",
   "webDir": "www",
   "bundledWebRuntime": false,
   "android": {
