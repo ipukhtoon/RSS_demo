@@ -2016,4 +2016,44 @@ button:disabled{opacity:.48!important}
 }
 .scanner-panel *, .scanner-mini-modal *, .product-photo-editor *,
 .pin-modal *, .modal *{color:#fff!important}
+
+/* v5: high-contrast bottom dock. Give every destination a visible dark tonal tile. */
+@media(max-width:900px){
+ #mobileNav.mobile-nav{
+  background:#142425!important;background-color:#142425!important;
+  border:1px solid #456364!important;box-shadow:0 8px 28px #0009!important;
+ }
+ #mobileNav .dock-item,
+ #mobileNav .dock-item:not(.active),
+ #mobileNav button.dock-item{
+  background:#203637!important;background-color:#203637!important;
+  color:#fff!important;-webkit-text-fill-color:#fff!important;
+  opacity:1!important;filter:none!important;
+  border:1px solid #456364!important;box-shadow:none!important;
+ }
+ #mobileNav .dock-item .dock-icon,
+ #mobileNav .dock-item .dock-label,
+ #mobileNav .dock-item span{
+  color:#fff!important;-webkit-text-fill-color:#fff!important;
+  opacity:1!important;filter:none!important;
+ }
+ #mobileNav .dock-item.active,
+ #mobileNav button.dock-item.active{
+  background:#168b78!important;background-color:#168b78!important;
+  color:#fff!important;-webkit-text-fill-color:#fff!important;
+  border:1px solid #35b69b!important;
+ }
+ #mobileNav .dock-item.active .dock-icon{
+  background:#0f6e60!important;color:#fff!important;
+  -webkit-text-fill-color:#fff!important;
+ }
+ #mobileNav #mobileMoreButton{
+  background:#203637!important;color:#fff!important;
+  -webkit-text-fill-color:#fff!important;
+ }
+ #mobileNav #mobileMoreButton.active{
+  background:#168b78!important;color:#fff!important;
+  -webkit-text-fill-color:#fff!important;
+ }
+}
 </style>
