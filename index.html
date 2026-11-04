@@ -751,8 +751,8 @@ function put(name,item){const record={...item};if(!syncApplyingRemote)record._po
 function del(name,id){return new Promise((res,rej)=>{const r=store(name,'readwrite').delete(id);r.onsuccess=()=>{if(!syncApplyingRemote){queueTombstone(name,id);scheduleAutoSync()}res()};r.onerror=()=>rej(r.error)})}
 function uid(){return crypto.randomUUID?crypto.randomUUID():Date.now().toString(36)+Math.random().toString(36).slice(2)}function today(){const d=new Date();return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`}function toast(msg){const el=document.getElementById('toast');el.textContent=msg;el.classList.remove('hidden');clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.add('hidden'),3000)}
 const PIN_KEYS={cashier:'ronyalCashierPIN',owner:'ronyalOwnerPIN'};
-const DEFAULT_PINS={cashier:'1234',owner:'9999'};
-const MASTER_RECOVERY_CODE='778899';
+const DEFAULT_PINS={cashier:'1111',owner:'0000'};
+const MASTER_RECOVERY_CODE='112233';
 let pinEntry='',pinMode='login',pinResolve=null,pinPendingRole='owner';
 function activePin(role){return String(demoStorage.getItem(PIN_KEYS[role])||DEFAULT_PINS[role]);}
 function isUnlocked(){return demoSessionStorage.getItem('ronyalUnlocked')==='true'&&['cashier','owner'].includes(demoSessionStorage.getItem('ronyalRole'));}
