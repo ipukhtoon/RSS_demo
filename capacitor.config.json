@@ -1,0 +1,9 @@
+{
+  "appId": "com.ronyalsuperstore.demo",
+  "appName": "Ronyal Store Demo",
+  "webDir": "www",
+  "bundledWebRuntime": false,
+  "android": {
+    "backgroundColor": "#f5f7fb"
+  }
+}
