@@ -1,8 +1,8 @@
 {
-  "name": "ronyal-super-store-demo",
+  "name": "store-manager-demo",
   "version": "1.0.0",
   "private": true,
-  "description": "Independent, offline-first limited demo POS for Ronyal Super Store",
+  "description": "Independent, offline-first limited demo for retail stores",
   "scripts": {
     "android:init": "cap add android",
     "android:sync": "cap sync android",
