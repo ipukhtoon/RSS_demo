@@ -1891,18 +1891,76 @@ body:before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;back
 @media(prefers-reduced-motion:reduce){#rssBrandSplash img,#rssBrandSplash span{animation:none!important}#rssBrandSplash{transition:none!important}}
 @media print{body:before,#rssBrandSplash{display:none!important}.receipt-brand-logo{width:23mm;max-height:20mm;filter:none!important;image-rendering:auto}}
 
-/* TRIAL DEMO THEME v2 — final palette override; original component geometry preserved. */
-:root{color-scheme:light!important;--md-primary:#67427f!important;--md-on-primary:#fff!important;--md-primary-container:#efdcf7!important;--md-on-primary-container:#321344!important;--md-secondary:#76566f!important;--md-on-secondary:#fff!important;--md-secondary-container:#f4dce9!important;--md-on-secondary-container:#351b2d!important;--md-tertiary:#b65f50!important;--md-on-tertiary:#fff!important;--md-tertiary-container:#ffdad2!important;--md-on-tertiary-container:#401a13!important;--md-error:#ba1a1a!important;--md-surface:#fbf7fa!important;--md-surface-container-low:#f8f1f7!important;--md-surface-container:#f2eaf2!important;--md-surface-container-high:#eae0eb!important;--md-surface-container-highest:#e3d8e4!important;--md-on-surface:#211a22!important;--md-on-surface-variant:#514650!important;--md-outline:#827581!important;--md-outline-variant:#d7cbd8!important;--green:#67427f!important;--green2:#b65f50!important;--mint:#f4e8f4!important;--bg:#fbf7fa!important;--card:#fff!important;--text:#211a22!important;--muted:#716471!important;--line:#e7dce7!important;--red:#ba1a1a!important;--amber:#8a4b22!important;--accent:#9460a6!important;--surface-high:#f2eaf2!important;--success:#277653!important}
-html,body{background:#f3edf5!important;color:#211a22!important;color-scheme:light!important}body{background:linear-gradient(135deg,#eee5f2 0%,#f7f1f8 38%,#fcefe9 72%,#eee7f4 100%)!important;background-attachment:fixed!important}.app{background:transparent!important}
-.top{background:#4f3265!important;color:#fff!important;border-bottom:1px solid #76568a!important;box-shadow:0 4px 22px #43265722!important}.top .brand,.top .brand h1,.top .brand small,.top .status{color:#fff!important}.logo{background:#f2dff0!important;color:#56336c!important}.status{background:#57366b!important;border-color:#a77eaa!important}
-.nav button{color:#604b61!important}.nav button.active,.mobile-nav button.active{background:#efdcf7!important;color:#432657!important}
-.panel,.stat,.dialog,.card,.product-card{background:#fff!important;color:#211a22!important;border:1px solid #e7dce7!important;box-shadow:0 4px 18px #482b4b12!important}.panel h3,.page-head h2,.stat strong,.product-card strong,.product-card b{color:#392544!important}
-button:not(.nav button):not(.mobile-nav button):not(.pin-link):not(.pin-keypad button):not(.lock-header-btn){background:#67427f!important;color:#fff!important;border-color:#67427f!important;box-shadow:none!important}button.secondary{background:#f4eaf5!important;color:#56366b!important;border:1px solid #dfcde2!important}button.danger{background:#fff0ef!important;color:#a51d18!important;border-color:#f1c6c2!important}
-input,select,textarea{background:#fff!important;color:#211a22!important;border:1px solid #cdbdce!important}input:focus,select:focus,textarea:focus{outline:2px solid #b783bd!important;border-color:#80518d!important}input::placeholder,textarea::placeholder{color:#897c89!important}
-label,th,.muted,.empty,.small{color:#716471!important}table th{background:#f5edf5!important;color:#563d5c!important}table td{color:#211a22!important;border-color:#e7dce7!important}
-.pill,.badge,.chip{background:#f4e5f3!important;color:#68436f!important;border-color:#e4cde3!important}.notice{background:#fff0eb!important;color:#713c36!important;border-color:#f1d0c7!important}.toast{background:#392544!important;color:#fff!important}.mobile-nav{background:#fff!important;border-top:1px solid #e7dce7!important}.modal-back{background:#26172b80!important}
-/* Preserve original PIN popup geometry; only recolour it to match the demo. */
-.pin-modal{background:#f8f1f7!important;color:#211a22!important;border-color:#d7cbd8!important}.pin-modal h2{color:#211a22!important}.pin-modal>p:not(.pin-error):not(.pin-subtle){color:#716471!important}.pin-dot{border-color:#67427f!important}.pin-dot.filled{background:#67427f!important;border-color:#67427f!important}.pin-keypad button{background:#f0e8f2!important;color:#302239!important;-webkit-text-fill-color:#302239!important}.pin-keypad button[data-pin-key="⌫"],.pin-keypad button[data-pin-key="✓"]{background:#efdcf7!important;color:#56336c!important;-webkit-text-fill-color:#56336c!important}.pin-link{color:#67427f!important}
-/* Explicitly replace the inline brown accent border in Add Product. */
-#productForm .field[style*="border"]{border-color:#9460a6!important}#productBarcode,#productPieceBarcode,#barcodeInput{border-color:#c5a9ca!important}#productBarcode:focus,#productPieceBarcode:focus,#barcodeInput:focus{border-color:#80518d!important;outline-color:#b783bd!important}.scanner-panel,.scanner-mini-modal,.scanner-input-row,.scanner-action-row{border-color:#d7c3da!important}
-#rssBrandSplash{background:linear-gradient(135deg,#432657,#70427f 58%,#b65f50)!important;color:#fff!important}</style>
+/* TRIAL DEMO THEME v3 — professional deep teal gradient surfaces; white typography; solid controls. */
+:root{
+ color-scheme:dark!important;
+ --md-primary:#27a58a!important;--md-on-primary:#ffffff!important;
+ --md-primary-container:#174f49!important;--md-on-primary-container:#ffffff!important;
+ --md-secondary:#b8d9d2!important;--md-on-secondary:#102c2a!important;
+ --md-secondary-container:#244b48!important;--md-on-secondary-container:#ffffff!important;
+ --md-tertiary:#a8d8c8!important;--md-on-tertiary:#102c2a!important;
+ --md-tertiary-container:#1d5146!important;--md-error:#ffb4ab!important;
+ --md-surface:#101c1d!important;--md-surface-container-low:#142425!important;
+ --md-surface-container:#192b2c!important;--md-surface-container-high:#203637!important;
+ --md-surface-container-highest:#294344!important;--md-on-surface:#ffffff!important;
+ --md-on-surface-variant:#ffffff!important;--md-outline:#587575!important;
+ --md-outline-variant:#385354!important;
+ --green:#168b78!important;--green2:#27a58a!important;--mint:#1d5146!important;
+ --bg:#101c1d!important;--card:#192b2c!important;--text:#ffffff!important;
+ --muted:#ffffff!important;--line:#385354!important;--red:#ffb4ab!important;
+ --amber:#ffd28a!important;--accent:#27a58a!important;
+}
+html,body{background:#101c1d!important;color:#fff!important;color-scheme:dark!important}
+body{background:linear-gradient(135deg,#0d191b 0%,#142b2c 38%,#183b3a 72%,#102326 100%)!important;background-attachment:fixed!important;font-family:Roboto,"Google Sans",system-ui,-apple-system,sans-serif}
+.app{background:transparent!important}
+body:before{background:none!important}
+.top{background:#102729!important;color:#fff!important;border-bottom:1px solid #385354!important;box-shadow:0 4px 22px #0005!important}
+.top *,.top .brand,.top .brand h1,.top .brand small,.top .status{color:#fff!important}
+.top .status{background:#1d4140!important;border-color:#587575!important}
+.logo{background:#1d5146!important;color:#fff!important}
+.nav button,.mobile-nav button{color:#fff!important}
+.nav button.active,.mobile-nav button.active{background:#1d5146!important;color:#fff!important}
+.panel,.stat,.dialog,.card,.product-card,.modal{
+ background:#192b2c!important;color:#fff!important;border:1px solid #385354!important;
+ box-shadow:0 5px 20px #0003!important;
+}
+.panel *,.stat *,.product-card *,.modal *{color:#fff!important}
+.page-head h2,.panel h3,.stat strong,.product-card strong,.product-card b{color:#fff!important}
+label,th,td,.muted,.empty,.small,.foot,.product-card span,.product-photo-help{color:#fff!important}
+table th{background:#203637!important}
+table td{background:transparent!important;border-color:#385354!important}
+tbody tr:hover{background:#203637!important}
+input,select,textarea{background:#203637!important;color:#fff!important;border:1px solid #587575!important}
+input::placeholder,textarea::placeholder{color:#d7e4e2!important;opacity:1!important}
+input:focus,select:focus,textarea:focus{outline:2px solid #27a58a!important;border-color:#27a58a!important}
+button:not(.nav button):not(.mobile-nav button):not(.pin-link):not(.pin-keypad button){
+ background:#168b78!important;color:#fff!important;border:1px solid #27a58a!important;
+ box-shadow:none!important;filter:none!important;
+}
+button:hover:not(.nav button):not(.mobile-nav button){background:#1b9b85!important;color:#fff!important}
+button.secondary{background:#244b48!important;color:#fff!important;border:1px solid #587575!important}
+button.danger{background:#7b2929!important;color:#fff!important;border:1px solid #a94c4c!important}
+button:disabled{opacity:.48!important}
+.lock-header-btn,#lockPosButton{background:#168b78!important;color:#fff!important;border:1px solid #27a58a!important}
+.pill,.badge,.chip{background:#1d5146!important;color:#fff!important;border:1px solid #397768!important}
+.notice{background:#3c3423!important;color:#fff!important;border:1px solid #79683d!important}
+.scanner-panel,.scanner-mini-modal{background:#203637!important;color:#fff!important;border:1px solid #587575!important}
+.scanner-panel *,.scanner-mini-modal *{color:#fff!important}
+.modal-back{background:#050d0ecc!important;backdrop-filter:blur(6px)}
+.modal{background:#192b2c!important;color:#fff!important;border:1px solid #587575!important}
+.toast{background:#294344!important;color:#fff!important;border:1px solid #587575!important}
+.pin-modal{background:#192b2c!important;color:#fff!important;border:1px solid #587575!important}
+.pin-modal *{color:#fff!important}
+.pin-dot{border-color:#27a58a!important}
+.pin-dot.filled{background:#27a58a!important;border-color:#27a58a!important}
+.pin-keypad button{background:#294344!important;color:#fff!important;-webkit-text-fill-color:#fff!important;border:1px solid #587575!important}
+.pin-keypad button[data-pin-key="⌫"],.pin-keypad button[data-pin-key="✓"]{background:#1d5146!important;color:#fff!important;-webkit-text-fill-color:#fff!important}
+.pin-link{color:#fff!important}
+#productForm .field[style*="border"]{border-color:#587575!important}
+#productBarcode,#productPieceBarcode,#barcodeInput{border-color:#587575!important}
+#productBarcode:focus,#productPieceBarcode:focus,#barcodeInput:focus{border-color:#27a58a!important;outline-color:#27a58a!important}
+.scanner-panel,.scanner-mini-modal,.scanner-input-row,.scanner-action-row{border-color:#587575!important}
+#rssBrandSplash{background:linear-gradient(135deg,#0d191b,#174542 60%,#168b78)!important;color:#fff!important}
+#rssBrandSplash *{color:#fff!important}
+@media print{html,body{background:#fff!important;color:#000!important}*{box-shadow:none!important}}
+</style>
