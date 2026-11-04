@@ -1891,45 +1891,43 @@ body:before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;back
 @media(prefers-reduced-motion:reduce){#rssBrandSplash img,#rssBrandSplash span{animation:none!important}#rssBrandSplash{transition:none!important}}
 @media print{body:before,#rssBrandSplash{display:none!important}.receipt-brand-logo{width:23mm;max-height:20mm;filter:none!important;image-rendering:auto}}
 
-/* FINAL DEMO THEME OVERRIDES — applies to every page and dynamically-created modal. */
+/* FINAL DEMO THEME — warm amethyst / coral gradient; original component geometry preserved. */
 :root{
  color-scheme:light!important;
- --md-primary:#3659a8!important;--md-on-primary:#fff!important;--md-primary-container:#dbe4ff!important;--md-on-primary-container:#17346f!important;
- --md-secondary:#565f75!important;--md-on-secondary:#fff!important;--md-secondary-container:#e1e7f7!important;--md-on-secondary-container:#202b45!important;
- --md-tertiary:#526b9c!important;--md-on-tertiary:#fff!important;--md-tertiary-container:#e5ecff!important;--md-on-tertiary-container:#1b315d!important;
+ --md-primary:#67427f!important;--md-on-primary:#fff!important;--md-primary-container:#efdcf7!important;--md-on-primary-container:#321344!important;
+ --md-secondary:#76566f!important;--md-on-secondary:#fff!important;--md-secondary-container:#f4dce9!important;--md-on-secondary-container:#351b2d!important;
+ --md-tertiary:#b65f50!important;--md-on-tertiary:#fff!important;--md-tertiary-container:#ffdad2!important;--md-on-tertiary-container:#401a13!important;
  --md-error:#ba1a1a!important;--md-error-container:#ffdad6!important;
- --md-surface:#f7f8fc!important;--md-surface-dim:#d9dce6!important;--md-surface-container-lowest:#fff!important;
- --md-surface-container-low:#f2f4fa!important;--md-surface-container:#eef0f7!important;--md-surface-container-high:#e6e9f2!important;--md-surface-container-highest:#dfe3ed!important;
- --md-on-surface:#1a1b22!important;--md-on-surface-variant:#454750!important;--md-outline:#777985!important;--md-outline-variant:#c5c7d2!important;
- --green:#3659a8!important;--green2:#5475c4!important;--mint:#e7edff!important;--bg:#f7f8fc!important;--card:#fff!important;--text:#1a1b22!important;--muted:#626574!important;--line:#dfe1ea!important;--red:#ba1a1a!important;--amber:#805600!important
+ --md-surface:#fbf7fa!important;--md-surface-dim:#e3dce3!important;--md-surface-container-lowest:#fff!important;
+ --md-surface-container-low:#f8f1f7!important;--md-surface-container:#f2eaf2!important;--md-surface-container-high:#eae0eb!important;--md-surface-container-highest:#e3d8e4!important;
+ --md-on-surface:#211a22!important;--md-on-surface-variant:#514650!important;--md-outline:#827581!important;--md-outline-variant:#d7cbd8!important;
+ --green:#67427f!important;--green2:#b65f50!important;--mint:#f4e8f4!important;--bg:#fbf7fa!important;--card:#fff!important;--text:#211a22!important;--muted:#716471!important;--line:#e7dce7!important;--red:#ba1a1a!important;--amber:#8a4b22!important
 }
-html,body{background:#f7f8fc!important;color:#1a1b22!important;color-scheme:light!important}
-body{background:#f7f8fc!important}
-.top{background:#243b70!important;color:#fff!important;border-color:#40588f!important}
-.nav button{color:#35415f!important}.nav button.active,.mobile-nav button.active{background:#dbe4ff!important;color:#17346f!important}
-.panel,.stat,.modal,.dialog,.card,.product-card,.pin-modal{background:#fff!important;color:#1a1b22!important;border-color:#dfe1ea!important;box-shadow:0 4px 18px #263b6812!important}
-.panel h3,.page-head h2,.stat strong,.product-card strong,.product-card b{color:#1a1b22!important}
-button:not(.nav button):not(.mobile-nav button):not(.pin-link){background:#3659a8!important;color:#fff!important;border-color:#3659a8!important}
-button.secondary,.pin-modal button.secondary{background:#edf0fa!important;color:#29416f!important;border:1px solid #cbd4e8!important}
+html,body{background:#fbf7fa!important;color:#211a22!important;color-scheme:light!important}
+body{background:linear-gradient(145deg,#fbf7fa 0%,#f7eff7 55%,#fff5f0 100%)!important}
+.top{background:linear-gradient(115deg,#432657 0%,#70427f 52%,#b65f50 100%)!important;color:#fff!important;border-color:#9b6b9e!important}
+.logo{background:#f2dff0!important;color:#56336c!important}
+.status{background:#57366b!important;color:#fff!important;border-color:#a77eaa!important}
+.nav button{color:#604b61!important}.nav button.active,.mobile-nav button.active{background:#efdcf7!important;color:#432657!important}
+.panel,.stat,.dialog,.card,.product-card{background:#fff!important;color:#211a22!important;border-color:#e7dce7!important;box-shadow:0 4px 18px #482b4b12!important}
+.panel h3,.page-head h2,.stat strong,.product-card strong,.product-card b{color:#392544!important}
+button:not(.nav button):not(.mobile-nav button):not(.pin-link):not(.pin-keypad button):not(.lock-header-btn){background:linear-gradient(115deg,#67427f,#a35b78 62%,#c16b55)!important;color:#fff!important;border-color:#8e5b86!important}
+button.secondary{background:#f4eaf5!important;color:#56366b!important;border:1px solid #dfcde2!important}
 button.danger{background:#fff0ef!important;color:#a51d18!important;border-color:#f1c6c2!important}
-input,select,textarea{background:#fff!important;color:#1a1b22!important;border-color:#c8cad5!important}
-input::placeholder,textarea::placeholder{color:#777b88!important}
-label,th,.muted,.empty,.small{color:#626574!important}
-table th{background:#f0f2f8!important;color:#35415f!important}
-table td{color:#1a1b22!important;border-color:#e1e4ed!important}
-.pill,.badge,.chip{background:#e6edff!important;color:#294a91!important;border-color:#d0dcfa!important}
-.notice{background:#eef2ff!important;color:#293f78!important;border-color:#cbd6fb!important}
-.toast{background:#202d4d!important;color:#fff!important}
-.mobile-nav{background:#fff!important;border-color:#dfe1ea!important}
-.modal-back{background:#17213c80!important}
-.pin-backdrop{background:rgba(18,29,55,.62)!important;backdrop-filter:blur(16px) saturate(140%)!important;-webkit-backdrop-filter:blur(16px) saturate(140%)!important}
-.pin-modal{background:#fff!important;color:#1a1b22!important;border:1px solid #d5dced!important;border-radius:26px!important;box-shadow:0 24px 80px #101d3c35!important}
-.pin-modal h2{color:#1a1b22!important}.pin-modal p{color:#626b80!important}
-.pin-dot{border-color:#3659a8!important}.pin-dot.filled{background:#3659a8!important}
-.pin-keypad button,.pin-keypad button[data-pin-key="⌫"],.pin-keypad button[data-pin-key="✓"]{background:#e9eefb!important;color:#233e78!important;-webkit-text-fill-color:#233e78!important;border:1px solid #d6def1!important;border-radius:16px!important;box-shadow:0 2px 5px #263b6810!important}
-.pin-keypad button:active{background:#dbe4ff!important}
-.pin-link{background:transparent!important;color:#3659a8!important;-webkit-text-fill-color:#3659a8!important}
-.pin-error{color:#ba1a1a!important}.pin-subtle{color:#777d8d!important}
-.pin-field input{background:#fff!important;color:#1a1b22!important}
-#rssBrandSplash{background:#243b70!important;color:#fff!important}
+input,select,textarea{background:#fff!important;color:#211a22!important;border-color:#cdbdce!important}
+input:focus,select:focus,textarea:focus{outline:2px solid #b783bd!important;border-color:#80518d!important}
+input::placeholder,textarea::placeholder{color:#897c89!important}
+label,th,.muted,.empty,.small{color:#716471!important}
+table th{background:#f5edf5!important;color:#563d5c!important}
+table td{color:#211a22!important;border-color:#e7dce7!important}
+.pill,.badge,.chip{background:#f4e5f3!important;color:#68436f!important;border-color:#e4cde3!important}
+.notice{background:#fff0eb!important;color:#713c36!important;border-color:#f1d0c7!important}
+.toast{background:#392544!important;color:#fff!important}
+.mobile-nav{background:#fff!important;border-color:#e7dce7!important}
+.modal-back{background:#26172b80!important}
+#rssBrandSplash{background:linear-gradient(125deg,#432657,#70427f 55%,#b65f50)!important;color:#fff!important}
+/* Scanner/barcode controls use the same palette, including nested scanner frames. */
+[id*="barcode" i],[class*="barcode" i],[id*="scan" i],[class*="scan" i]{border-color:#cdbdce!important}
+[id*="barcode" i]:focus,[class*="barcode" i]:focus,[id*="scan" i]:focus,[class*="scan" i]:focus{border-color:#80518d!important;outline-color:#b783bd!important}
+[id*="barcode" i] button,[class*="barcode" i] button,[id*="scan" i] button,[class*="scan" i] button{border-color:#8e5b86!important}
 </style>
