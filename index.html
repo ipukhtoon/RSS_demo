@@ -1963,4 +1963,57 @@ button:disabled{opacity:.48!important}
 #rssBrandSplash{background:linear-gradient(135deg,#0d191b,#174542 60%,#168b78)!important;color:#fff!important}
 #rssBrandSplash *{color:#fff!important}
 @media print{html,body{background:#fff!important;color:#000!important}*{box-shadow:none!important}}
+
+/* v4 navigation + popup cleanup: force readable white navigation and remove legacy brown surfaces. */
+.nav,.nav button,.mobile-nav,.mobile-nav button,.mobile-nav .dock-item,
+.mobile-nav .dock-item *,.mobile-nav button *,.nav button *{
+ color:#fff!important;opacity:1!important;filter:none!important;text-shadow:none!important;
+}
+.nav button,.mobile-nav button,.mobile-nav .dock-item{
+ background:transparent!important;border-color:transparent!important;
+ -webkit-text-fill-color:#fff!important;box-shadow:none!important;
+}
+.nav button.active,.mobile-nav button.active,.mobile-nav .dock-item.active,
+.mobile-nav button[aria-current="page"],.nav button[aria-current="page"]{
+ background:#1d5146!important;color:#fff!important;
+ -webkit-text-fill-color:#fff!important;border:1px solid #397768!important;
+}
+.nav button:not(.active):hover,.mobile-nav button:not(.active):hover,
+.mobile-nav .dock-item:not(.active):hover{
+ background:#203637!important;color:#fff!important;
+}
+.mobile-more-menu,.mobile-more-menu:not(.hidden){
+ background:#192b2c!important;background-color:#192b2c!important;
+ color:#fff!important;border:1px solid #587575!important;
+ box-shadow:0 12px 40px #0009!important;
+}
+.mobile-more-menu *,.mobile-more-menu .more-menu-item,
+.mobile-more-menu .more-menu-item span,.mobile-more-menu button{
+ color:#fff!important;-webkit-text-fill-color:#fff!important;
+ opacity:1!important;filter:none!important;text-shadow:none!important;
+}
+.mobile-more-menu .more-menu-item{
+ background:transparent!important;border:1px solid transparent!important;
+ box-shadow:none!important;
+}
+.mobile-more-menu .more-menu-item.active,
+.mobile-more-menu .more-menu-item[aria-current="page"]{
+ background:#1d5146!important;color:#fff!important;
+ border-color:#397768!important;
+}
+.mobile-more-menu .more-menu-item:hover{
+ background:#203637!important;color:#fff!important;
+}
+.mobile-more-menu .more-menu-item:focus-visible{
+ outline:2px solid #27a58a!important;outline-offset:2px!important;
+}
+/* Neutralize leftover brown hard-coded components across dialogs, scanners and photo controls. */
+.scanner-panel,.scanner-mini-modal,.scanner-input-row,.scanner-action-row,
+.product-photo-editor,.product-photo-preview,.product-card-photo,
+.product-card-photo-placeholder,.modal,.modal-back .modal,
+.pin-modal,.mobile-more-menu{
+ background-color:#192b2c!important;border-color:#385354!important;color:#fff!important;
+}
+.scanner-panel *, .scanner-mini-modal *, .product-photo-editor *,
+.pin-modal *, .modal *{color:#fff!important}
 </style>
